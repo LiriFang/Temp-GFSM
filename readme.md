@@ -1,8 +1,8 @@
 # Running the experiments
 ## Dataset
 * [DPPIN](https://github.com/DongqiFu/DPPIN)
-** temporal graph: `Dynamic.txt`: ```u, i, ts , edge feature```
-** node feature: `Node_Features.txt`: ```u, node features```
+**temporal graph: `Dynamic.txt`: ```u, i, ts , edge feature```
+**node feature: `Node_Features.txt`: ```u, node features```
 
 ## Requirements
 * Python >= 3.7
