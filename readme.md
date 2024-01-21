@@ -32,7 +32,7 @@ cd Temp-GFSM
 python3 main.py --dir 'social_data/' --batch_size 10 --k_shot 3 --k_query 3 --n_way 3 --num_task 20 --update_step 5 --nhid 32 --update_lr 0.001 --device 1 --labels 
 ```
 
-Arguments in `main.py` need to be specified for different datasets:
+```Arguments in `main.py` need to be specified for different datasets:
 * Social Data:
    * --labels 'dblp_ct1_1,dblp_ct1_0,facebook_ct1_1,facebook_ct1_0,tumblr_ct1_1,tumblr_ct1_0,highschool_ct1_1,highschool_ct1_0,infectious_ct1_1,infectious_ct1_0,mit_ct1_1,mit_ct1_0'
    * --logdir 'logs-sd-b1-'
@@ -43,7 +43,7 @@ Arguments in `main.py` need to be specified for different datasets:
    * --logdir 'logs-ppin-b1-'
    * --output_file''output-ppin-'
    * --total_sample_g 11
-
+```
 
 This repository is for the KDD' 2022 paper "Meta-Learned Metrics over Multi-Evolution Temporal Graphs" ([Link](https://dongqifu.github.io/publications/Temp-GFSM.pdf)) .
 
