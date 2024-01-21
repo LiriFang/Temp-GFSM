@@ -1,8 +1,16 @@
 # Running the experiments
-## Dataset
-* [DPPIN](https://github.com/DongqiFu/DPPIN)
-  * temporal graph: `Dynamic.txt`: ```u, i, ts , edge feature```
-  * node feature: `Node_Features.txt`: ```u, node features```
+## Dataset used in the paper
+### Data Format:
+ * temporal graph: `Dynamic.txt`: ```u, i, ts , edge feature```
+ * node feature: `Node_Features.txt`: ```u, node features```
+### Download 
+* DPPIN：
+  * [Download Link](https://drive.google.com/file/d/1YPSmutKRy5tX9dUNSNkVNlqOM1tS8b_G/view?usp=drive_link)
+  * Download to the folder 'dppin_data/'
+* Social Data:
+  * [Download Link](https://drive.google.com/file/d/1kKOXXTs4nvplnd0wZCWzq9YUL3D7ig1A/view?usp=drive_link)
+  * Download to the folder 'social_data/'
+   
 
 ## Requirements
 * Python >= 3.7
@@ -20,7 +28,8 @@ pytorch_geometric == 1.7.0
 
 ## How to run code
 ```{bash}
-python3 main.py --dir '../social_data/' --batch_size 10 --k_shot 3 --k_query 3 --n_way 3 --num_task 20 --update_step 5 --nhid 32 --update_lr 0.001 --device 1
+cd Temp-GFSM
+python3 main.py --dir 'social_data/' --batch_size 10 --k_shot 3 --k_query 3 --n_way 3 --num_task 20 --update_step 5 --nhid 32 --update_lr 0.001 --device 1
 ```
 
 
